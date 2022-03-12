@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>«Белорусская шина»</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Favicon -->
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!-- fonts.css -->
+    <link rel="preload" href="assets/fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- select2 -->
+    <link rel=" stylesheet" href="assets/css/select2.min.css">
+    <!-- icomoon -->
+    <link rel=" stylesheet" href="assets/css/icomoon.css">
+    <!-- style.css -->
+    <link rel=" stylesheet" href="assets/css/bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="mobile_menu">
+            <div class="row align-items-center justify-content-between mb-5">
+                <div class="col-2"> <button type="button" class="btn-close" aria-label="Close"></button></div>
+                <di class="col">
+                    <h4 class="mb-0">Меню</h4>
+                </di>
+            </div>
+        </div>
+        <div class="search_wrapper">
+            <div class="search_block">
+                <div class="row justify-content-between mb-5">
+                    <div class="col">
+                        <h4 class="mb-0">Поиск</h4>
+                    </div>
+                    <div class="col-2 text-end">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8"> <input type="text" class="input_search" placeholder="Поиск..."></div>
+                    <div class="col-12 col-md-4 mt-4 mt-md-0"><button class="btn btn-default btn_search">Поиск</button>
+                    </div>
+                </div>
+                <div class="search_result"></div>
+            </div>
+        </div>
+        <div class="head head-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="head_item">
+                            <span class="icon-sity"></span>
+                            <span class="name">г.Усть-каменогорск</span>
+                        </div>
+                    </div>
+                    <div
+                        class="d-none d-md-flex col-md-7 col-lg-5 col-xl-4 ms-auto  justify-content-end head_contacts_wrapper">
+                        <div class="head_contacts d-flex align-items-center">
+                            <a href="tel:+77232251416" class="head_item">
+                                <span class="icon-phone"></span>
+                                <span class="name">+7 (7232) 25-14-16</span>
+                            </a>
+                            <a href="mailto:tdkz@belshina.by" class="head_item">
+                                <span class="icon-email"></span>
+                                <span class="name">tdkz@belshina.by</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-1 d-flex 
+                    justify-content-end">
+                        <ul class="socials">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-inst"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-youtube"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head head-bottom">
+            <div class="container">
+                <nav>
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="#" class="logo head_logo"> <img src="assets/imgs/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-lg-7 col-xl-6 d-none d-lg-block menu_desktop_wrapper">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-3 d-flex align-items-center  justify-content-end ms-auto">
+                            <button class="search_btn">
+                                <span class="icon-search"></span>
+                            </button>
+                            <a href="#" class="btn btn-red btn_shop">
+                                <span class="icon-shop"></span>
+                                <span class="text">Корзина</span>
+                                <span class="quantity">1</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-1 d-lg-none">
+                            <div class="menu_btn">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <h1>Более 14 лет на рынке </h1>
+                <div class="subtitle">Целью создания компании «Белорусская шина» являлось расширение присутствия на
+                    территории Республики
+                    Казахстан продукции «Белшина»</div>
+
+                <div class="filter">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="size-tab" data-bs-toggle="tab" data-bs-target="#size"
+                                type="button" role="tab" aria-controls="size" aria-selected="true">Подбор по
+                                размеру</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="car-tab" data-bs-toggle="tab" data-bs-target="#car"
+                                type="button" role="tab" aria-controls="car" aria-selected="false">Подбор по
+                                авто</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form_control form_select">
+                                        <div class="number"> 1</div>
+                                        <select name="width" id="">
+                                            <option value="Ширина" selected="selected">Ширина</option>
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="1820">1820</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form_control form_select">
+                                        <div class="number">2</div>
+                                        <select name="height" id="">
+                                            <option value="Высота" selected="selected">Высота</option>
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="1820">1820</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form_control form_select">
+                                        <div class="number">3</div>
+                                        <select name="diameter" id="">
+                                            <option value="Диаметр" selected="selected">Диаметр</option>
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="1820">1820</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto ms-auto text-end">
+                                    <button class="btn btn-default filter_btn"><span class="icon-search"></span>
+                                        Подбор</button>
+                                </div>
+                            </div>
+                            <div class="filter_dropdown">
+                                <button class="filter_dropdown-toggle" type="button">
+                                    <span class="icon-Vector-3"></span> Расширенный подбор
+                                </button>
+                                <div class="filter_dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form_control form_select">
+                                                <div class="number"> 1</div>
+                                                <select name="width" id="">
+                                                    <option value="Ширина" selected="selected">Ширина</option>
+                                                    <option value="100">100</option>
+                                                    <option value="150">150</option>
+                                                    <option value="1820">1820</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex flex-wrap">
+                                            <div class="form-group form-radio">
+                                                <label class="radio-inline">
+                                                    <input class="" type="radio" name="type_filter" value="1">
+                                                    <span class="signature">Ширина</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group form-radio">
+                                                <label class="radio-inline">
+                                                    <input class="" type="radio" name="type_filter" value="3">
+                                                    <span class="signature">Ширина</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group form-checkbox">
+                                                <label class="checkbox-inline">
+                                                    <input class="" type="checkbox" name="" value="2">
+                                                    <span class="signature">Высота</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="car" role="tabpanel" aria-labelledby="car-tab">
+                            <div class=" row">
+                                <div class="col">
+                                    <div class="form_control form_select">
+                                        <div class="number"> 1</div>
+                                        <select name="width" id="">
+                                            <option value="Ширина" selected="selected">Ширина</option>
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="1820">1820</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form_control form_select">
+                                        <div class="number">2</div>
+                                        <select name="height" id="">
+                                            <option value="Высота" selected="selected">Высота</option>
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="1820">1820</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form_control form_select">
+                                        <div class="number">3</div>
+                                        <select name="diameter" id="">
+                                            <option value="Диаметр" selected="selected">Диаметр</option>
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="1820">1820</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto ms-auto text-end">
+                                    <button class="btn btn-default filter_btn"><span class="icon-search"></span>
+                                        Подбор</button>
+                                </div>
+                            </div>
+                            <div class="filter_dropdown">
+                                <button class="filter_dropdown-toggle" type="button">
+                                    <span class="icon-Vector-3"></span> Расширенный подбор
+                                </button>
+                                <div class="filter_dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form_control form_select">
+                                                <div class="number"> 1</div>
+                                                <select name="width" id="">
+                                                    <option value="Ширина" selected="selected">Ширина</option>
+                                                    <option value="100">100</option>
+                                                    <option value="150">150</option>
+                                                    <option value="1820">1820</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col d-flex flex-wrap">
+                                            <div class="form-group form-radio">
+                                                <label class="radio-inline">
+                                                    <input class="" type="radio" name="type_filter" value="1">
+                                                    <span class="signature">Ширина</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group form-radio">
+                                                <label class="radio-inline">
+                                                    <input class="" type="radio" name="type_filter" value="3">
+                                                    <span class="signature">Ширина</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group form-checkbox">
+                                                <label class="checkbox-inline">
+                                                    <input class="" type="checkbox" name="" value="2">
+                                                    <span class="signature">Высота</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section section_category">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="category category_var_one"
+                        style=" background-image: url('assets/imgs/car1.jpg');">
+                        <span class="title">Легковые
+                            автомобили</span>
+                        <div class="category_btn">Показать <span class="icon-Vector-5"></span></div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="category category_var_one"
+                        style=" background-image: url('assets/imgs/car2.jpg');">
+                        <span class="title">Внедорожники</span>
+                        <div class="category_btn">Показать <span class="icon-Vector-5"></span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="category category_var_two"
+                        style=" background-image: url('assets/imgs/image4.png');">
+                        <span class="title">Легковые
+                            автомобили</span>
+                        <div class="category_btn">Показать <span class="icon-Vector-5"></span></div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="category category_var_two"
+                        style=" background-image: url('assets/imgs/image3.png');">
+                        <span class="title">Большегрузные,
+                            особо больше
+                            авто</span>
+                        <div class="category_btn">Показать <span class="icon-Vector-5"></span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_popular section">
+        <div class="container">
+            <div class="title_block row ">
+                <div class="col">
+                    <h2>
+                        Популярные<span class="color_red"> модели</span>
+                    </h2>
+                </div>
+                <div
+                    class="col-12 col-md-4 mt-4 mt-md-0 order-1 order-md-0 d-flex align-items-center justify-content-md-end">
+                    <a href="#" class="link">Новое поступление</a>
+                    <a href="#" class="link">Скидки</a>
+                </div>
+                <div class="col-3 col-sm-2 d-flex justify-content-end">
+                    <div class="slider_arrows">
+                        <div class="swiper-button-prev popular_slider_prev"><span class="icon-Vector-2"></span></div>
+                        <div class="swiper-button-next popular_slider_next"><span class="icon-Vector-1"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper popular_slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="sale">Скидка</div>
+                            <a href="#" class="img">
+                                <img src="assets/imgs/image1.png" alt="">
+                            </a>
+                            <a href="#" class="center">
+                                <span class="article">SUV 215/60R17</span>
+                                <span class="name">Шина AstartA
+                                    BEL-402 СЕР ЛЕГК Б/К</span>
+                                <div class="rating">
+                                    <div class="rating_star">
+                                        <span class="icon-star" style="color: #FFC700;"></span>
+                                        <span class="icon-star" style="color: #FFC700;"></span>
+                                        <span class="icon-star" style="color: #FFC700;"></span>
+                                        <span class="icon-star" style="color: #FFC700;"></span>
+                                        <span class="icon-star" style="color: #FFC700;"></span>
+                                    </div>
+                                    <span class="rating_text">(0 отзывов)</span>
+                                </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="price">
+                                    <span class="new_price">25 000₸</span>
+                                    <span class="old_price">30 000₸</span>
+                                </div>
+                                <button title="Добавить в корзину" class="product_btn"><span
+                                        class="icon-shop"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="sale">Скидка</div>
+                            <a href="#" class="img">
+                                <img src="assets/imgs/image1.png" alt="">
+                            </a>
+                            <a href="#" class="center">
+                                <span class="article">SUV 215/60R17</span>
+                                <span class="name">Шина AstartA
+                                    BEL-402 СЕР ЛЕГК Б/К</span>
+                                <div class="rating">
+                                    <div class="rating_star">
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <span class="rating_text">(0 отзывов)</span>
+                                </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="price">
+                                    <span class="new_price">25 000₸</span>
+                                    <span class="old_price">30 000₸</span>
+                                </div>
+                                <button title="Добавить в корзину" class="product_btn"><span
+                                        class="icon-shop"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="sale">Скидка</div>
+                            <a href="#" class="img">
+                                <img src="assets/imgs/image1.png" alt="">
+                            </a>
+                            <a href="#" class="center">
+                                <span class="article">SUV 215/60R17</span>
+                                <span class="name">Шина AstartA
+                                    BEL-402 СЕР ЛЕГК Б/К</span>
+                                <div class="rating">
+                                    <div class="rating_star">
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <span class="rating_text">(0 отзывов)</span>
+                                </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="price">
+                                    <span class="new_price">25 000₸</span>
+                                    <span class="old_price">30 000₸</span>
+                                </div>
+                                <button title="Добавить в корзину" class="product_btn"><span
+                                        class="icon-shop"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="sale">Скидка</div>
+                            <a href="#" class="img">
+                                <img src="assets/imgs/image1.png" alt="">
+                            </a>
+                            <a href="#" class="center">
+                                <span class="article">SUV 215/60R17</span>
+                                <span class="name">Шина AstartA
+                                    BEL-402 СЕР ЛЕГК Б/К</span>
+                                <div class="rating">
+                                    <div class="rating_star">
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <span class="rating_text">(0 отзывов)</span>
+                                </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="price">
+                                    <span class="new_price">25 000₸</span>
+                                    <span class="old_price">30 000₸</span>
+                                </div>
+                                <button title="Добавить в корзину" class="product_btn"><span
+                                        class="icon-shop"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="sale">Скидка</div>
+                            <a href="#" class="img">
+                                <img src="assets/imgs/image1.png" alt="">
+                            </a>
+                            <a href="#" class="center">
+                                <span class="article">SUV 215/60R17</span>
+                                <span class="name">Шина AstartA
+                                    BEL-402 СЕР ЛЕГК Б/К</span>
+                                <div class="rating">
+                                    <div class="rating_star">
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <span class="rating_text">(0 отзывов)</span>
+                                </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="price">
+                                    <span class="new_price">25 000₸</span>
+                                    <span class="old_price">30 000₸</span>
+                                </div>
+                                <button title="Добавить в корзину" class="product_btn"><span
+                                        class="icon-shop"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product">
+                            <div class="sale">Скидка</div>
+                            <a href="#" class="img">
+                                <img src="assets/imgs/image1.png" alt="">
+                            </a>
+                            <a href="#" class="center">
+                                <span class="article">SUV 215/60R17</span>
+                                <span class="name">Шина AstartA
+                                    BEL-402 СЕР ЛЕГК Б/К</span>
+                                <div class="rating">
+                                    <div class="rating_star">
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star" style="color: #C42920;"></span>
+                                        <span class="icon-star"></span>
+                                    </div>
+                                    <span class="rating_text">(0 отзывов)</span>
+                                </div>
+                            </a>
+                            <div class="bottom">
+                                <div class="price">
+                                    <span class="new_price">25 000₸</span>
+                                    <span class="old_price">30 000₸</span>
+                                </div>
+                                <button title="Добавить в корзину" class="product_btn"><span
+                                        class="icon-shop"></span></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_about">
+        <img class="about_img" src="assets/imgs/image7.jpg" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-lg-7 ms-auto">
+                    <div class="about_block">
+                        <img src="assets/imgs/logo.png" alt="">
+                        <h2 class="title">ТОО “Белорусская Шина”</h2>
+                        <div class="subtitle">
+                            <p>
+                                ТОО «Белорусская шина» создано и зарегистрировано 21 июня 2007 года, в
+                                г.Усть-Каменогорске.
+                                Учредителем ТОО «Белорусская шина» является ОАО «Белшина».
+                            </p>
+                            <p>
+                                Целью создания компании «Белорусская шина» являлось расширение присутствия на территории
+                                Республики Казахстан продукции «Белшина»
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-default btn-arrow">Подробнее <span class="icon-Vector-5"></span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_info-block">
+        <div class="container">
+            <h2>Более 300 моделей шин высокого качества</h2>
+            <a href="#" class="btn btn-secondary">Каталог</a>
+        </div>
+    </section>
+    <section class="section_process section">
+        <div class="container">
+            <h2>Как мы <span class="color_red">работаем</span></h2>
+            <div class="row process_list">
+                <div class="col-md-4">
+                    <div class="process_item"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process_item"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process_item"></div>
+                </div>
+            </div>
+            <div class="process_banner">
+                <div class="process_banner_left"> <img src="assets/imgs/image10.png" alt=""></div>
+                <div class="process_banner_right">
+                    <span class="title">
+                        Рекламный банер<br>
+                        акциии, скидки ...
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_news section">
+        <div class="container">
+            <div class="title_block">
+                <h2>Наши <span class="color_red">новости</span></h2>
+                <div class="slider_arrows">
+                    <div class="swiper-button-prev news_slider_prev"><span class="icon-Vector-2"></span></div>
+                    <div class="swiper-button-next news_slider_next"><span class="icon-Vector-1"></span></div>
+                </div>
+            </div>
+            <div class="swiper news_slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="#" class="news_block">
+                            <div class="news_img_wrapper">
+                                <div class="news_img">
+                                    <img src="assets/imgs/image6.jpg" alt="">
+                                </div>
+                            </div>
+                            <span class="title">
+                                ТОО "Белорусская шина" официальный партнер Влада Ушакова
+                            </span>
+                            <span class="date">14 Июль 2021</span>
+                            <span class="text">ТОО "Белорусская шина" официальные партнеры Влада Ушакова.</span>
+                            <div class="news_btn">Показать <span class="icon-Vector-5"></span></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news_block">
+                            <div class="news_img_wrapper">
+                                <div class="news_img">
+                                    <img src="assets/imgs/image6.jpg" alt="">
+                                </div>
+                            </div>
+                            <span class="title">
+                                ТОО "Белорусская шина" официальный партнер Влада Ушакова
+                            </span>
+                            <span class="date">14 Июль 2021</span>
+                            <span class="text">ТОО "Белорусская шина" официальные партнеры Влада Ушакова.</span>
+                            <div class="news_btn">Показать <span class="icon-Vector-5"></span></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news_block">
+                            <div class="news_img_wrapper">
+                                <div class="news_img">
+                                    <img src="assets/imgs/image6.jpg" alt="">
+                                </div>
+                            </div>
+                            <span class="title">
+                                ТОО "Белорусская шина" официальный партнер Влада Ушакова
+                            </span>
+                            <span class="date">14 Июль 2021</span>
+                            <span class="text">ТОО "Белорусская шина" официальные партнеры Влада Ушакова.</span>
+                            <div class="news_btn">Показать <span class="icon-Vector-5"></span></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="news_block">
+                            <div class="news_img_wrapper">
+                                <div class="news_img">
+                                    <img src="assets/imgs/image6.jpg" alt="">
+                                </div>
+                            </div>
+                            <span class="title">
+                                ТОО "Белорусская шина" официальный партнер Влада Ушакова
+                            </span>
+                            <span class="date">14 Июль 2021</span>
+                            <span class="text">ТОО "Белорусская шина" официальные партнеры Влада Ушакова.</span>
+                            <div class="news_btn">Показать <span class="icon-Vector-5"></span></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_advantages">
+        <div class="container">
+            <div class="advantages">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="advantages_item">
+                            <img src="assets/imgs/delivery.svg" alt="">
+                            <div class="ms-sm-3">
+                                <span class="name">Быстрая доставка</span>
+                                <span class="text">В любой регион РК</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 pt-4 pt-sm-0">
+                        <div class="advantages_item">
+                            <img src="assets/imgs/card.svg" alt="">
+                            <div class="ms-sm-3">
+                                <span class="name">Удобная оплата</span>
+                                <span class="text">Надежно и быстро</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pt-4 pt-md-0">
+                        <div class="advantages_item">
+                            <img src="assets/imgs/gift.svg" alt="">
+                            <div class="ms-sm-3">
+                                <span class="name">Подарок</span>
+                                <span class="text">На память</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#" class="logo footer_logo"> <img src="assets/imgs/logo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- swiper -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <script src="assets/js/select2.full.min.js"></script>
+    <!-- script.js -->
+    <script src="assets/js/bundle.min.js"></script>
+</body>
+
+</html>
