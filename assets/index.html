@@ -22,21 +22,21 @@
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- select2 -->
-    <link rel=" stylesheet" href="css/select2.min.css">
+    <!-- <link rel=" stylesheet" href="css/select2.min.css"> -->
     <!-- icomoon -->
     <link rel=" stylesheet" href="css/icomoon.css">
     <!-- style.css -->
     <link rel=" stylesheet" href="css/bundle.min.css">
 </head>
 
-<body>
+<body class="page_index ">
     <header class="header">
         <div class="mobile_menu">
             <div class="row align-items-center justify-content-between mb-5">
                 <div class="col-2"> <button type="button" class="btn-close" aria-label="Close"></button></div>
-                <div class="col">
+                <di class="col">
                     <h4 class="mb-0">Меню</h4>
-                </div>
+                </di>
             </div>
         </div>
         <div class="search_wrapper">
@@ -141,182 +141,191 @@
                         </div>
                     </div>
                 </nav>
-                <h1>Более 14 лет на рынке </h1>
-                <div class="subtitle">Целью создания компании «Белорусская шина» являлось расширение присутствия на
-                    территории Республики
-                    Казахстан продукции «Белшина»</div>
+            </div>
+        </div>
+    </header>
+    <section class="head_section">
+        <div class="container">
+            <h1 class="head_title">Более 14 лет на рынке </h1>
+            <div class="head_subtitle subtitle">Целью создания компании «Белорусская шина» являлось расширение
+                присутствия на
+                территории Республики
+                Казахстан продукции «Белшина»</div>
 
-                <div class="filter">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="size-tab" data-bs-toggle="tab" data-bs-target="#size"
-                                type="button" role="tab" aria-controls="size" aria-selected="true">Подбор по
-                                размеру</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="car-tab" data-bs-toggle="tab" data-bs-target="#car"
-                                type="button" role="tab" aria-controls="car" aria-selected="false">Подбор по
-                                авто</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form_control form_select">
-                                        <div class="number"> 1</div>
-                                        <select name="width">
-                                            <option value="Ширина" selected="selected">Ширина</option>
-                                            <option value="100">100</option>
-                                            <option value="150">150</option>
-                                            <option value="1820">1820</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form_control form_select">
-                                        <div class="number">2</div>
-                                        <select name="height">
-                                            <option value="Высота" selected="selected">Высота</option>
-                                            <option value="100">100</option>
-                                            <option value="150">150</option>
-                                            <option value="1820">1820</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form_control form_select">
-                                        <div class="number">3</div>
-                                        <select name="diameter">
-                                            <option value="Диаметр" selected="selected">Диаметр</option>
-                                            <option value="100">100</option>
-                                            <option value="150">150</option>
-                                            <option value="1820">1820</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto ms-auto text-end">
-                                    <button class="btn btn-default filter_btn"><span class="icon-search"></span>
-                                        Подбор</button>
+            <div class="filter">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="size-tab" data-bs-toggle="tab" data-bs-target="#size"
+                            type="button" role="tab" aria-controls="size" aria-selected="true">Подбор по
+                            размеру</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="car-tab" data-bs-toggle="tab" data-bs-target="#car" type="button"
+                            role="tab" aria-controls="car" aria-selected="false">Подбор по
+                            авто</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form_control form_select">
+                                    <div class="number"> 1</div>
+                                    <select name="width" id="">
+                                        <option value="Ширина" selected="selected">Ширина</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="1820">1820</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="filter_dropdown">
-                                <button class="filter_dropdown-toggle" type="button">
-                                    <span class="icon-Vector-3"></span> Расширенный подбор
-                                </button>
-                                <div class="filter_dropdown-menu">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="form_control form_select">
-                                                <div class="number"> 1</div>
-                                                <select name="width">
-                                                    <option value="Ширина" selected="selected">Ширина</option>
-                                                    <option value="100">100</option>
-                                                    <option value="150">150</option>
-                                                    <option value="1820">1820</option>
-                                                </select>
-                                            </div>
+                            <div class="col">
+                                <div class="form_control form_select">
+                                    <div class="number">2</div>
+                                    <select name="height" id="">
+                                        <option value="Высота" selected="selected">Высота</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="1820">1820</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form_control form_select">
+                                    <div class="number">3</div>
+                                    <select name="diameter" id="">
+                                        <option value="Диаметр" selected="selected">Диаметр</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="1820">1820</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-auto ms-auto text-end">
+                                <button class="btn btn-default filter_btn"><span class="icon-search"></span>
+                                    Подбор</button>
+                            </div>
+                        </div>
+                        <div class="filter_dropdown">
+                            <button class="filter_dropdown-toggle" type="button">
+                                <span class="icon-Vector-3"></span> Расширенный подбор
+                            </button>
+                            <div class="filter_dropdown-menu">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form_control form_select">
+                                            <div class="number"> 1</div>
+                                            <select name="width" id="">
+                                                <option value="Ширина" selected="selected">Ширина</option>
+                                                <option value="100">100</option>
+                                                <option value="150">150</option>
+                                                <option value="1820">1820</option>
+                                            </select>
                                         </div>
-                                        <div class="col d-flex flex-wrap">
-                                            <div class="form-group form-radio">
-                                                <label class="radio-inline">
-                                                    <input class="" type="radio" name="type_filter" value="1">
-                                                    <span class="signature">Ширина</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-group form-radio">
-                                                <label class="radio-inline">
-                                                    <input class="" type="radio" name="type_filter" value="3">
-                                                    <span class="signature">Ширина</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-group form-checkbox">
-                                                <label class="checkbox-inline">
-                                                    <input class="" type="checkbox" name="" value="2">
-                                                    <span class="signature">Высота</span>
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col d-flex flex-wrap align-items-center">
+                                        <div class="form-group form-radio">
+                                            <label class="radio-inline">
+                                                <input class="" type="radio" name="type_filter" value="1">
+                                                <span class="signature">Ширина</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group form-radio">
+                                            <label class="radio-inline">
+                                                <input class="" type="radio" name="type_filter" value="3">
+                                                <span class="signature">Ширина</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group form-checkbox">
+                                            <label class="checkbox-inline">
+                                                <input class="" type="checkbox" name="" value="2">
+                                                <span class="signature">Высота</span>
+                                            </label>
+                                        </div>
+                                        <div class="form_control form_range">
+                                            <input type="range" value="0" min="1" max="100">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="car" role="tabpanel" aria-labelledby="car-tab">
-                            <div class=" row">
-                                <div class="col">
-                                    <div class="form_control form_select">
-                                        <div class="number"> 1</div>
-                                        <select name="width">
-                                            <option value="Ширина" selected="selected">Ширина</option>
-                                            <option value="100">100</option>
-                                            <option value="150">150</option>
-                                            <option value="1820">1820</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form_control form_select">
-                                        <div class="number">2</div>
-                                        <select name="height">
-                                            <option value="Высота" selected="selected">Высота</option>
-                                            <option value="100">100</option>
-                                            <option value="150">150</option>
-                                            <option value="1820">1820</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form_control form_select">
-                                        <div class="number">3</div>
-                                        <select name="diameter">
-                                            <option value="Диаметр" selected="selected">Диаметр</option>
-                                            <option value="100">100</option>
-                                            <option value="150">150</option>
-                                            <option value="1820">1820</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto ms-auto text-end">
-                                    <button class="btn btn-default filter_btn"><span class="icon-search"></span>
-                                        Подбор</button>
+                    </div>
+                    <div class=" tab-pane fade" id="car" role="tabpanel" aria-labelledby="car-tab">
+                        <div class=" row">
+                            <div class="col">
+                                <div class="form_control form_select">
+                                    <div class="number"> 1</div>
+                                    <select name="width" id="">
+                                        <option value="Ширина" selected="selected">Ширина</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="1820">1820</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="filter_dropdown">
-                                <button class="filter_dropdown-toggle" type="button">
-                                    <span class="icon-Vector-3"></span> Расширенный подбор
-                                </button>
-                                <div class="filter_dropdown-menu">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div class="form_control form_select">
-                                                <div class="number"> 1</div>
-                                                <select name="width">
-                                                    <option value="Ширина" selected="selected">Ширина</option>
-                                                    <option value="100">100</option>
-                                                    <option value="150">150</option>
-                                                    <option value="1820">1820</option>
-                                                </select>
-                                            </div>
+                            <div class="col">
+                                <div class="form_control form_select">
+                                    <div class="number">2</div>
+                                    <select name="height" id="">
+                                        <option value="Высота" selected="selected">Высота</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="1820">1820</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form_control form_select">
+                                    <div class="number">3</div>
+                                    <select name="diameter" id="">
+                                        <option value="Диаметр" selected="selected">Диаметр</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="1820">1820</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-auto ms-auto text-end">
+                                <button class="btn btn-default filter_btn"><span class="icon-search"></span>
+                                    Подбор</button>
+                            </div>
+                        </div>
+                        <div class="filter_dropdown">
+                            <button class="filter_dropdown-toggle" type="button">
+                                <span class="icon-Vector-3"></span> Расширенный подбор
+                            </button>
+                            <div class="filter_dropdown-menu">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form_control form_select">
+                                            <div class="number"> 1</div>
+                                            <select name="width" id="">
+                                                <option value="Ширина" selected="selected">Ширина
+                                                </option>
+                                                <option value="100">100</option>
+                                                <option value="150">150</option>
+                                                <option value="1820">1820</option>
+                                            </select>
                                         </div>
-                                        <div class="col d-flex flex-wrap">
-                                            <div class="form-group form-radio">
-                                                <label class="radio-inline">
-                                                    <input class="" type="radio" name="type_filter" value="1">
-                                                    <span class="signature">Ширина</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-group form-radio">
-                                                <label class="radio-inline">
-                                                    <input class="" type="radio" name="type_filter" value="3">
-                                                    <span class="signature">Ширина</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-group form-checkbox">
-                                                <label class="checkbox-inline">
-                                                    <input class="" type="checkbox" name="" value="2">
-                                                    <span class="signature">Высота</span>
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col d-flex flex-wrap">
+                                        <div class="form-group form-radio">
+                                            <label class="radio-inline">
+                                                <input class="" type="radio" name="type_filter" value="1">
+                                                <span class="signature">Ширина</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group form-radio">
+                                            <label class="radio-inline">
+                                                <input class="" type="radio" name="type_filter" value="3">
+                                                <span class="signature">Ширина</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group form-checkbox">
+                                            <label class="checkbox-inline">
+                                                <input class="" type="checkbox" name="" value="2">
+                                                <span class="signature">Высота</span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -326,7 +335,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <section class="section section_category">
         <div class="container">
             <div class="row">
@@ -769,7 +778,7 @@
     <!-- swiper -->
     <script src="js/swiper-bundle.min.js"></script>
     <!-- swiper -->
-    <script src="js/select2.full.min.js"></script>
+    <!-- <script src="js/select2.full.min.js"></script> -->
     <!-- script.js -->
     <script src="js/bundle.min.js"></script>
 </body>
