@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>«Белорусская шина»</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Favicon -->
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!-- fonts.css -->
+    <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- select2 -->
+    <!-- <link rel=" stylesheet" href="css/select2.min.css"> -->
+    <!-- icomoon -->
+    <link rel=" stylesheet" href="css/icomoon.css">
+    <!-- style.css -->
+    <link rel=" stylesheet" href="css/bundle.min.css">
+</head>
+
+<body class="">
+    <header class="header">
+        <div class="mobile_menu">
+            <div class="row align-items-center justify-content-between mb-5">
+                <div class="col-2"> <button type="button" class="btn-close" aria-label="Close"></button></div>
+                <di class="col">
+                    <h4 class="mb-0">Меню</h4>
+                </di>
+            </div>
+        </div>
+        <div class="search_wrapper">
+            <div class="search_block">
+                <div class="row justify-content-between mb-5">
+                    <div class="col">
+                        <h4 class="mb-0">Поиск</h4>
+                    </div>
+                    <div class="col-2 text-end">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-8"> <input type="text" class="input_search" placeholder="Поиск..."></div>
+                    <div class="col-12 col-md-4 mt-4 mt-md-0"><button class="btn btn-default btn_search">Поиск</button>
+                    </div>
+                </div>
+                <div class="search_result"></div>
+            </div>
+        </div>
+        <div class="head head-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="head_item">
+                            <span class="icon-sity"></span>
+                            <span class="name">г.Усть-каменогорск</span>
+                        </div>
+                    </div>
+                    <div
+                        class="d-none d-md-flex col-md-7 col-lg-5 col-xl-4 ms-auto  justify-content-end head_contacts_wrapper">
+                        <div class="head_contacts d-flex align-items-center">
+                            <a href="tel:+77232251416" class="head_item">
+                                <span class="icon-phone"></span>
+                                <span class="name">+7 (7232) 25-14-16</span>
+                            </a>
+                            <a href="mailto:tdkz@belshina.by" class="head_item">
+                                <span class="icon-email"></span>
+                                <span class="name">tdkz@belshina.by</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-1 d-flex 
+                    justify-content-end">
+                        <ul class="socials">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-inst"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-youtube"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head head-bottom">
+            <div class="container">
+                <nav>
+                    <div class="row align-items-center justify-content-lg-between">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="#" class="logo head_logo"> <img src="imgs/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-lg-7 col-xl-6 d-none d-lg-block menu_desktop_wrapper">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-3 d-flex align-items-center  justify-content-end ms-auto">
+                            <button class="search_btn">
+                                <span class="icon-search"></span>
+                            </button>
+                            <a href="#" class="btn btn-red btn_shop">
+                                <span class="icon-shop"></span>
+                                <span class="text">Корзина</span>
+                                <span class="quantity">1</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-2 col-md-1 d-lg-none">
+                            <div class="menu_btn">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <!-- <script src="js/select2.full.min.js"></script> -->
+    <!-- script.js -->
+    <script src="js/bundle.min.js"></script>
+</body>
+
+</html>
